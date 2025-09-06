@@ -1,11 +1,17 @@
-streamlit
-pandas
-requests
-beautifulsoup4
-Pillow
-maigret
-holehe
-snscrape
-yt-dlp
-instaloader
-tqdm
+
+# Core dashboard
+streamlit>=1.25.0
+pandas>=2.0.0
+
+# OSINT helpers
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+
+# JSON / YAML parsing
+pyyaml>=6.0.1
+
+# System process handling
+psutil>=5.9.5
+
+# Optional: rich terminal logging
+rich>=13.5.2
