@@ -1,52 +1,34 @@
-# 🕵️ OSINT Forge
+# 🕵️‍♂️ OSINT Forge
 
-**OSINT Forge** is a lightweight, privacy-respecting OSINT runner + Streamlit dashboard that lets you:  
+A lightweight, privacy-respecting OSINT runner + Streamlit dashboard.  
+Run username scans, collect results, and review everything in a clean, modern UI.  
 
-- Run username scans with popular tools (e.g., Sherlock, Holehe).  
-- Collect and normalize results into a single `summary.json`.  
-- Review results in a clean, modern dashboard, with options to save or overwrite runs.  
-- Keep your repo small by ignoring bulky artifacts (results are local by default).  
-
-⚠️ **Ethics & legality:** Use only on targets you are authorized to research. You are responsible for compliance with all applicable laws.
+⚠️ **Ethics & legality**: Only use on targets you are authorized to research.  
+You are responsible for compliance with all applicable laws.
 
 ---
 
 ## ✨ Features
 
-- **One-command scans** from the UI (Streamlit) or CLI.  
-- **Normalized output** → all results stored in `summary.json` for easy parsing/sharing.  
-- **Configurable storage** → overwrite in a single folder, keep last N runs, or compact mode to prune intermediates.  
-- **Works offline** → no cloud lock-in after tools are installed.  
-- **Small repo** → bulky outputs are `.gitignore`’d by default.  
-
----
-
-## 🔗 Pipeline & Tools
-
-Currently integrated:
-- **Sherlock** → username enumeration across social media.  
-- **Holehe** → check if an email is registered on popular sites.  
-- **Custom parsers** → normalize tool outputs into `summary.json`.  
-
-Planned integrations:
-- **theHarvester** (emails/domains)  
-- **ExifTool** (image metadata)  
-- **PhoneInfoga** (phone number intelligence)  
-
-> Tools are modular — if something isn’t installed, the pipeline skips gracefully.  
+- 🔍 **One-command scans**: Search with popular OSINT tools (e.g., Sherlock).  
+- 📑 **Normalized output**: All results collected into a single `summary.json`.  
+- 📊 **Modern dashboard**: Streamlit UI with results shown in real time.  
+- ⚙️ **Configurable storage**:  
+  - Overwrite mode (single folder)  
+  - Keep last *N* runs  
+  - Compact mode (prune intermediates)  
+- 🌐 **Works offline**: No cloud lock-in, everything runs locally.  
+- 📦 **Small repo**: Bulky data files ignored by default via `.gitignore`.
 
 ---
 
 ## 📦 Installation
 
-Clone the repository and install requirements:  
+Clone the repository and set up:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/osint-forge.git
+git clone https://github.com/IRISHDEVELOPERDEV/osint-forge.git
 cd osint-forge
+chmod +x setup.sh run.sh osint-master.sh
+./setup.sh
 
-# install python dependencies
-pip install -r requirements.txt
-
-# make shell script executable
-chmod +x osint-master.sh
