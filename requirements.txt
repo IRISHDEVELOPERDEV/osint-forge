@@ -1,0 +1,11 @@
+streamlit
+pandas
+requests
+beautifulsoup4
+Pillow
+maigret
+holehe
+snscrape
+yt-dlp
+instaloader
+tqdm
