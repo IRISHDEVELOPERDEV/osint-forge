@@ -1,0 +1,32 @@
+# Ignore OSINT results and large data
+osint_results/
+reports/
+data/
+*.json
+*.html
+*.pdf
+*.csv
+*.log
+
+# Python cache and virtualenvs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Streamlit temporary files
+.streamlit/
+
+# Editor backups
+*.swp
+*.swo
+*~
